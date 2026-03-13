@@ -11,6 +11,7 @@
         header { background: #003366; color: white; padding: 15px; text-align: center; }
         nav { display: flex; justify-content: center; gap: 15px; background: #004080; padding: 10px; }
         nav a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
         
         main { max-width: 600px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; }
         .card { border-left: 4px solid #003366; padding: 15px; margin-bottom: 20px; background: #e9ecef; }
@@ -27,30 +28,36 @@
 </head>
 <body>
 
-    <header><h1>Portal CPET</h1></header>
+    <header>
+        <h1>Portal CPET</h1>
+    </header>
     
-    <nav>
-        <a href="#">HOME</a>
-        <a href="#">PERFIL</a>
-        <a href="#">PROGRESSO</a>
-        <a href="#">CONTATO</a>
+    <nav aria-label="Navegação principal">
+        <a href="index.html">HOME</a>
+        <a href="perfil.html">PERFIL</a>
+        <a href="progresso.html">PROGRESSO</a>
+        <a href="contato.html">CONTATO</a>
     </nav>
 
     <main>
-        <div class="card">
+        <section class="card">
             <h2>Aluno: João da Terra</h2>
             <p>Curso: Técnico em Informática</p>
             <p>Inscrição: 12/03/2026</p>
-        </div>
+        </section>
 
-        <h3>Minha Evolução</h3>
-        <div class="progress-container">
-            <div class="progress-bar"></div>
-        </div>
-        <p><strong>75% concluído</strong></p>
+        <section>
+            <h3>Minha Evolução</h3>
+            <div class="progress-container" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar"></div>
+            </div>
+            <p><strong>75% concluído</strong></p>
+        </section>
     </main>
 
-    <footer>Desenvolvido por Marcos - Atividade de Dev Web</footer>
+    <footer>
+        <p>&copy; Desenvolvido por Marcos - Atividade de Dev Web</p>
+    </footer>
 
 </body>
 </html>
