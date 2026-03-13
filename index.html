@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Evolução - João da Terra</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: sans-serif; background-color: #f4f4f4; color: #333; padding-bottom: 50px; }
+        
+        header { background: #003366; color: white; padding: 15px; text-align: center; }
+        nav { display: flex; justify-content: center; gap: 15px; background: #004080; padding: 10px; }
+        nav a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; }
+        
+        main { max-width: 600px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; }
+        .card { border-left: 4px solid #003366; padding: 15px; margin-bottom: 20px; background: #e9ecef; }
+        
+        .progress-container { background: #ddd; border-radius: 10px; height: 15px; margin: 15px 0; }
+        .progress-bar { background: #28a745; width: 75%; height: 100%; border-radius: 10px; }
 
+        footer { text-align: center; font-size: 12px; margin-top: 20px; color: #666; }
+
+        @media (max-width: 480px) {
+            nav { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header><h1>Portal CPET</h1></header>
+    
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">PERFIL</a>
+        <a href="#">PROGRESSO</a>
+        <a href="#">CONTATO</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Aluno: João da Terra</h2>
+            <p>Curso: Técnico em Informática</p>
+            <p>Inscrição: 12/03/2026</p>
+        </div>
+
+        <h3>Minha Evolução</h3>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        <p><strong>75% concluído</strong></p>
+    </main>
+
+    <footer>Desenvolvido por Marcos - Atividade de Dev Web</footer>
+
+</body>
+</html>
